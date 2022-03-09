@@ -1,2 +1,8 @@
-package com.ksidelta.calendal.calendar;public class SharedCalendarDto {
+package com.ksidelta.calendal.calendar;
+
+import java.net.URL;
+
+public class SharedCalendarDto {
+    Integer id;
+    URL url;
 }
