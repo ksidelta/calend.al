@@ -12,7 +12,6 @@ public class SharedCalendar {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Integer id;
 
-    @Column
     public String userId;
 
     @Convert(converter = URLConverter.class)
