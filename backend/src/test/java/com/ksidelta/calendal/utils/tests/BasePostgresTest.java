@@ -1,8 +1,12 @@
 package com.ksidelta.calendal.utils.tests;
 
+import org.junit.jupiter.api.BeforeEach;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.context.TestConfiguration;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.Primary;
@@ -15,7 +19,6 @@ import javax.sql.DataSource;
 
 @Testcontainers
 @SpringBootTest
-@Import(BasePostgresTest.Conf.class)
 public class BasePostgresTest {
     @Container
     private static PostgreSQLContainer postgresqlContainer =

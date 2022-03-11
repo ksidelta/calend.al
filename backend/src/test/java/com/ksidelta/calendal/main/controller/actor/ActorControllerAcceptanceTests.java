@@ -21,7 +21,6 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 @ExtendWith(SpringExtension.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-@AutoConfigureMockMvc
 class ActorControllerAcceptanceTests {
     @Autowired
     private TestRestTemplate testRestTemplate;

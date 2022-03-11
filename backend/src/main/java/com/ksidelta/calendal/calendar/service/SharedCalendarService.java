@@ -1,4 +1,4 @@
-package com.ksidelta.calendal.calendar;
+package com.ksidelta.calendal.calendar.service;
 
 import java.net.URL;
 import java.util.List;
